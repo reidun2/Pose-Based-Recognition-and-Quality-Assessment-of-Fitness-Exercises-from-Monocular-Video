@@ -1,0 +1,3553 @@
+{
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/Back squat high bar 240 lb x 5.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 52,
+        "end": 143,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 143,
+        "bottom": 153,
+        "end": 162,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 162,
+        "bottom": 178,
+        "end": 199,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 199,
+        "bottom": 218,
+        "end": 273,
+        "errors": {
+          "insufficient_depth": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 273,
+        "bottom": 281,
+        "end": 320,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 320,
+        "bottom": 328,
+        "end": 353,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 353,
+        "bottom": 383,
+        "end": 413,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 413,
+        "bottom": 433,
+        "end": 437,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 437,
+        "bottom": 463,
+        "end": 492,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 10,
+        "start": 492,
+        "bottom": 503,
+        "end": 554,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 11,
+        "start": 554,
+        "bottom": 600,
+        "end": 650,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 12,
+        "start": 650,
+        "bottom": 672,
+        "end": 849,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 13,
+        "start": 849,
+        "bottom": 874,
+        "end": 889,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 14,
+        "start": 889,
+        "bottom": 935,
+        "end": 947,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/BARBELL SQUAT.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 42,
+        "end": 85,
+        "errors": {
+          "insufficient_depth": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 85,
+        "bottom": 124,
+        "end": 167,
+        "errors": {
+          "insufficient_depth": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 167,
+        "bottom": 205,
+        "end": 244,
+        "errors": {
+          "insufficient_depth": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/Barbell Back Squat.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 16,
+        "end": 254,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 254,
+        "bottom": 306,
+        "end": 355,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 355,
+        "bottom": 401,
+        "end": 448,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 448,
+        "bottom": 492,
+        "end": 545,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 545,
+        "bottom": 590,
+        "end": 640,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 640,
+        "bottom": 682,
+        "end": 729,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 729,
+        "bottom": 777,
+        "end": 834,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 834,
+        "bottom": 873,
+        "end": 932,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 932,
+        "bottom": 946,
+        "end": 1050,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102(1).mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 70,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102(2).mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 68,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102(3).mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 50,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102(5).mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 51,
+        "end": 77,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102(6).mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 16,
+        "end": 72,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 72,
+        "bottom": 103,
+        "end": 112,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 112,
+        "bottom": 128,
+        "end": 139,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 139,
+        "bottom": 217,
+        "end": 225,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0102.mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 44,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/0105.mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 45,
+        "end": 92,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 92,
+        "bottom": 184,
+        "end": 235,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/correct/5657.mp4": {
+    "exercise": "squat",
+    "label": "correct",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 16,
+        "end": 39,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(1).mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 43,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(2).mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 53,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 0,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 1,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(4).mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 50,
+        "end": 127,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(5).mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 50,
+        "end": 79,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 54,
+        "end": 81,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 1
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/1212.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 32,
+        "end": 59,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/456546.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 26,
+        "end": 38,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/567567.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 86,
+        "end": 123,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 123,
+        "bottom": 139,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/645373467.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 76,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/657.mp4": {
+    "exercise": "squat",
+    "label": "incorrect",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 64,
+        "end": 107,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(1).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 45,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(2).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 53,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 0,
+          "insufficient_depth": 1,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 1,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(3).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 52,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(4).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 59,
+        "end": 127,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 0,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(5).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 52,
+        "end": 79,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102(6).mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 13,
+        "end": 65,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 65,
+        "bottom": 94,
+        "end": 107,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 107,
+        "bottom": 162,
+        "end": 197,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 197,
+        "bottom": 215,
+        "end": 225,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0102.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 56,
+        "end": 81,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 1
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/0105.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 186,
+        "end": 235,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/1212.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 33,
+        "end": 59,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/456546.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 28,
+        "end": 38,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/5657.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 20,
+        "end": 59,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 1,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/567567.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 87,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/645373467.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 76,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/657.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 64,
+        "end": 107,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 1,
+          "rounded_back": 1,
+          "excessive_forward_lean": 1,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/7u76u.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 49,
+        "end": 77,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/Barbell Back Squat.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 306,
+        "end": 356,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 356,
+        "bottom": 401,
+        "end": 450,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 450,
+        "bottom": 492,
+        "end": 547,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 547,
+        "bottom": 590,
+        "end": 641,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 641,
+        "bottom": 682,
+        "end": 732,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 732,
+        "bottom": 777,
+        "end": 830,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 830,
+        "bottom": 873,
+        "end": 1050,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 0,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/u76u.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 80,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/u76u76.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 18,
+        "bottom": 43,
+        "end": 84,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/u7u76u.mp4": {
+    "exercise": "squat",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 82,
+        "end": 149,
+        "errors": {
+          "knee_over_toe": 1,
+          "insufficient_depth": 0,
+          "rounded_back": 1,
+          "excessive_forward_lean": 0,
+          "valgus_knee": 0,
+          "heels_lift": 0,
+          "non_neutral_spine": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/225 bench press.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 29,
+        "end": 41,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 41,
+        "bottom": 113,
+        "end": 155,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 155,
+        "bottom": 180,
+        "end": 232,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 232,
+        "bottom": 244,
+        "end": 298,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/361kg 796lbs BENCH PRESS UNOFFICIAL WORLD RECORD JULIUS MADDOX.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 97,
+        "end": 122,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 122,
+        "bottom": 147,
+        "end": 166,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 166,
+        "bottom": 186,
+        "end": 227,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 227,
+        "bottom": 269,
+        "end": 300,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 300,
+        "bottom": 331,
+        "end": 366,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 366,
+        "bottom": 402,
+        "end": 433,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 433,
+        "bottom": 464,
+        "end": 493,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 493,
+        "bottom": 522,
+        "end": 540,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 540,
+        "bottom": 558,
+        "end": 608,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 10,
+        "start": 608,
+        "bottom": 658,
+        "end": 687,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 11,
+        "start": 687,
+        "bottom": 716,
+        "end": 751,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 12,
+        "start": 751,
+        "bottom": 787,
+        "end": 797,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/Nick s Impressive 281lbs Bench Press on First Attempt at USAPL Powerlifting Meet 💪.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 62,
+        "end": 94,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 94,
+        "bottom": 126,
+        "end": 161,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 161,
+        "bottom": 197,
+        "end": 234,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 234,
+        "bottom": 272,
+        "end": 291,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 291,
+        "bottom": 310,
+        "end": 338,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 338,
+        "bottom": 366,
+        "end": 393,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 393,
+        "bottom": 421,
+        "end": 437,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/Do THIS to increase your BENCH PRESS.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 39,
+        "end": 113,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 113,
+        "bottom": 155,
+        "end": 161,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 161,
+        "bottom": 191,
+        "end": 233,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 233,
+        "bottom": 250,
+        "end": 261,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 261,
+        "bottom": 287,
+        "end": 325,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/I CAN BENCH PRESS MORE THAN MY BODYWEIGHT! #gymgirl #benchpress #strongwomen #fitnessinspiration.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 25,
+        "end": 44,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 44,
+        "bottom": 63,
+        "end": 83,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 83,
+        "bottom": 103,
+        "end": 125,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 125,
+        "bottom": 147,
+        "end": 166,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 166,
+        "bottom": 186,
+        "end": 230,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 230,
+        "bottom": 274,
+        "end": 321,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/MALE BENCH PRESS STRENGTH STANDARDS fit davidlaid bodybuilding gym benchpress.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 1,
+        "end": 31,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 31,
+        "bottom": 41,
+        "end": 51,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 51,
+        "bottom": 113,
+        "end": 123,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 123,
+        "bottom": 239,
+        "end": 258,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 258,
+        "bottom": 268,
+        "end": 287,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/3x3 265 benchpress powerlifting gym fitness.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 74,
+        "end": 89,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 89,
+        "bottom": 110,
+        "end": 153,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 153,
+        "bottom": 174,
+        "end": 217,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 217,
+        "bottom": 221,
+        "end": 249,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/Benching Every Day – Day 3 325 x 1 powerlifting benchpress.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 36,
+        "end": 92,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 92,
+        "bottom": 143,
+        "end": 185,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 185,
+        "bottom": 213,
+        "end": 263,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 263,
+        "bottom": 310,
+        "end": 334,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How Much Can a Natty 73kg Lifter Bench Press.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 33,
+        "end": 45,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 45,
+        "bottom": 69,
+        "end": 87,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 87,
+        "bottom": 107,
+        "end": 121,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 121,
+        "bottom": 184,
+        "end": 243,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 243,
+        "bottom": 279,
+        "end": 302,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 302,
+        "bottom": 317,
+        "end": 347,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 347,
+        "bottom": 365,
+        "end": 383,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 383,
+        "bottom": 406,
+        "end": 454,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 454,
+        "bottom": 492,
+        "end": 517,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How To Use More Chest In Bench Press chestworkout.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 53,
+        "end": 114,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 130,
+        "bottom": 164,
+        "end": 205,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 205,
+        "bottom": 235,
+        "end": 280,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 280,
+        "bottom": 292,
+        "end": 316,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 316,
+        "bottom": 336,
+        "end": 393,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 393,
+        "bottom": 419,
+        "end": 468,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 468,
+        "bottom": 484,
+        "end": 555,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How to ACTUALLY Use Leg Drive on Bench Press.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 63,
+        "end": 96,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 96,
+        "bottom": 103,
+        "end": 168,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 168,
+        "bottom": 191,
+        "end": 227,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 227,
+        "bottom": 240,
+        "end": 283,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 283,
+        "bottom": 299,
+        "end": 359,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 359,
+        "bottom": 390,
+        "end": 407,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 407,
+        "bottom": 455,
+        "end": 501,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 501,
+        "bottom": 573,
+        "end": 593,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How to bench like a powerlifter benchpress powerlifting.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 6,
+        "end": 48,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 48,
+        "bottom": 90,
+        "end": 108,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 108,
+        "bottom": 126,
+        "end": 152,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 152,
+        "bottom": 179,
+        "end": 224,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 224,
+        "bottom": 269,
+        "end": 314,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 314,
+        "bottom": 360,
+        "end": 483,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 483,
+        "bottom": 606,
+        "end": 668,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 668,
+        "bottom": 731,
+        "end": 759,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 759,
+        "bottom": 787,
+        "end": 845,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 10,
+        "start": 845,
+        "bottom": 903,
+        "end": 1102,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How to find your grip width for bench press.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 56,
+        "end": 149,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 149,
+        "bottom": 243,
+        "end": 293,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/How to fix Shoulder Pain during the BENCH PRESS.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 35,
+        "end": 56,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 56,
+        "bottom": 86,
+        "end": 109,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 109,
+        "bottom": 145,
+        "end": 162,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 162,
+        "bottom": 185,
+        "end": 212,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 212,
+        "bottom": 234,
+        "end": 267,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 267,
+        "bottom": 291,
+        "end": 324,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 324,
+        "bottom": 360,
+        "end": 380,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 380,
+        "bottom": 402,
+        "end": 432,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/Instantly INCREASE Your Bench Press 💪🏼.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 482,
+        "end": 535,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 535,
+        "bottom": 588,
+        "end": 913,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 913,
+        "bottom": 1238,
+        "end": 1259,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 1259,
+        "bottom": 1281,
+        "end": 1321,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 1321,
+        "bottom": 1362,
+        "end": 1384,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 1384,
+        "bottom": 1407,
+        "end": 1428,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 1428,
+        "bottom": 1450,
+        "end": 1471,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 1471,
+        "bottom": 1493,
+        "end": 1526,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 1526,
+        "bottom": 1559,
+        "end": 1579,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 10,
+        "start": 1579,
+        "bottom": 1599,
+        "end": 1729,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 11,
+        "start": 1729,
+        "bottom": 1859,
+        "end": 1999,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(1).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 59,
+        "end": 112,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(10).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 54,
+        "end": 68,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(12).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 16,
+        "end": 39,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 39,
+        "bottom": 56,
+        "end": 66,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 66,
+        "bottom": 102,
+        "end": 129,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 129,
+        "bottom": 163,
+        "end": 173,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 173,
+        "bottom": 208,
+        "end": 247,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(13).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 1,
+        "end": 73,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 73,
+        "bottom": 135,
+        "end": 204,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(11).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 39,
+        "end": 57,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(14).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 11,
+        "bottom": 38,
+        "end": 114,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 114,
+        "bottom": 126,
+        "end": 184,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 184,
+        "bottom": 195,
+        "end": 205,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 205,
+        "bottom": 252,
+        "end": 281,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(15).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 26,
+        "end": 51,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 51,
+        "bottom": 70,
+        "end": 86,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(2).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 37,
+        "end": 89,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(3).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 27,
+        "end": 55,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 55,
+        "bottom": 64,
+        "end": 84,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(4).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 1,
+        "end": 44,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 44,
+        "bottom": 75,
+        "end": 90,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 3,
+        "start": 90,
+        "bottom": 156,
+        "end": 202,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 4,
+        "start": 202,
+        "bottom": 213,
+        "end": 292,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 5,
+        "start": 292,
+        "bottom": 313,
+        "end": 323,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 6,
+        "start": 323,
+        "bottom": 405,
+        "end": 431,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 7,
+        "start": 431,
+        "bottom": 480,
+        "end": 546,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 8,
+        "start": 546,
+        "bottom": 567,
+        "end": 583,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 9,
+        "start": 583,
+        "bottom": 633,
+        "end": 753,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(5).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 38,
+        "end": 90,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(6).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 21,
+        "end": 29,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 29,
+        "bottom": 57,
+        "end": 91,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(7).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 42,
+        "end": 84,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 84,
+        "bottom": 91,
+        "end": 118,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(8).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 84,
+        "end": 119,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 119,
+        "bottom": 122,
+        "end": 139,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110(9).mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 79,
+        "end": 129,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/bench_press/0110.mp4": {
+    "exercise": "bench_press",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 30,
+        "end": 80,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      },
+      {
+        "rep": 2,
+        "start": 80,
+        "bottom": 97,
+        "end": 150,
+        "errors": {
+          "elbow_flaring": 0,
+          "uneven_lockout": 0,
+          "bar_path_off": 0,
+          "bar_path_not_vertical": 0,
+          "butt_off_bench": 0,
+          "non_neutral_wrist": 0
+        }
+      }
+    ]
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/latpulldown/Lat pulldown_1.mp4": {
+    "exercise": "latpulldown",
+    "label": "raw",
+    "reps": [
+      {
+        "rep": 1,
+        "start": 0,
+        "bottom": 326,
+        "end": 343,
+        "errors": {
+          "elbows_not_below_shoulders": 0,
+          "incomplete_rom": 0,
+          "torso_swing": 0,
+          "shrugging": 1
+        }
+      }
+    ]
+  }
+}

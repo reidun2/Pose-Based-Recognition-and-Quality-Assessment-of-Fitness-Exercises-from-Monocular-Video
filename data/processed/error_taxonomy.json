@@ -1,0 +1,84 @@
+{
+  "squat": {
+    "view_required": "side_or_front",
+    "errors": {
+      "insufficient_depth": {
+        "type": "binary",
+        "description": "Hip does not reach knee height (hip_y < knee_y not achieved).",
+        "view": "side",
+        "default_thresholds": { "hip_knee_margin": 0.0 }
+      },
+      "excessive_forward_lean": {
+        "type": "binary",
+        "description": "Torso leans too far forward at bottom position.",
+        "view": "side",
+        "default_thresholds": { "torso_angle_deg": 55 }
+      },
+      "valgus_knee": {
+        "type": "binary",
+        "description": "Knees cave inward (front view).",
+        "view": "front",
+        "default_thresholds": { "knee_inward_ratio": 0.9 }
+      },
+      "heels_lift": {
+        "type": "binary",
+        "description": "Heels lift off the floor during squat.",
+        "view": "side_or_front",
+        "default_thresholds": { "heel_y_delta": 0.02 }
+      },
+      "non_neutral_spine": {
+        "type": "binary",
+        "description": "Spine loses neutral alignment (rounding or excessive arch) during squat.",
+        "view": "side",
+        "default_thresholds": {
+          "spine_angle_change_deg": 20
+        }
+      }
+    }
+  },
+  "bench_press": {
+    "view_required": "side_or_top",
+    "errors": {
+      "elbow_flaring": {
+        "type": "binary",
+        "description": "Elbows flare excessively away from the torso.",
+        "view": "side_or_top",
+        "default_thresholds": { "elbow_angle_deg": 85 }
+      },
+      "bar_path_not_vertical": {
+        "type": "binary",
+        "description": "Wrist trajectory deviates significantly from a vertical path.",
+        "view": "side",
+        "default_thresholds": { "wrist_x_std": 0.03 }
+      },
+      "uneven_lockout": {
+        "type": "binary",
+        "description": "Left and right arms lock out at different heights.",
+        "view": "front_or_top",
+        "default_thresholds": { "wrist_y_diff": 0.02 }
+      },
+      "butt_off_bench": {
+        "type": "binary",
+        "description": "Hips lift off the bench during press.",
+        "view": "side",
+        "default_thresholds": { "hip_y_delta": 0.02 }
+      },
+      "non_neutral_wrist": {
+        "type": "binary",
+        "description": "Wrist joint deviates from neutral alignment.",
+        "view": "side",
+        "default_thresholds": { "wrist_angle_deg": 25 }
+      }
+    }
+  },
+  "lat_pulldown": {
+    "errors": {
+      "incomplete_top_extension": {"desc": "Не полностью выпрямляешь руки вверху"},
+      "insufficient_pull_depth": {"desc": "Недостаточно низко тянешь вниз"},
+      "excessive_lean_back": {"desc": "Слишком сильный наклон корпуса назад"},
+      "swinging_momentum": {"desc": "Раскачка/читинг корпусом"},
+      "uneven_pull": {"desc": "Неравномерная тяга (лево/право)"},
+      "shoulder_shrug": {"desc": "Пожимаешь плечами вверх"}
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(1).mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 1,
+      "insufficient_depth": 0,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(2).mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 0,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 1,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(4).mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 1,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102(5).mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 1,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/0102.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 1,
+      "heels_lift": 0,
+      "non_neutral_spine": 1
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/1212.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/456546.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/567567.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 0,
+      "excessive_forward_lean": 1,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/645373467.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 0,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  },
+  "C:/Users/reidu/Desktop/Pose-Based Exercise Recognition and Form Quality Assessment from Monocular Video/data/raw_videos/squat/incorrect/657.mp4": {
+    "exercise": "squat",
+    "quality": "incorrect",
+    "errors": {
+      "knee_over_toe": 1,
+      "insufficient_depth": 1,
+      "excessive_forward_lean": 0,
+      "valgus_knee": 0,
+      "heels_lift": 0
+    }
+  }
+}
