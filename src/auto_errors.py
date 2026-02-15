@@ -185,7 +185,15 @@ def auto_label_rep(seq_norm, ex_name, st, en):
     # default empty
     out = {}
 
-    if ex_name == "squat":
+    ex = str(ex_name).lower()
+    if ex in ("lateral_raise", "lateralraises"):
+        ex = "lateral_raises"
+    elif ex == "lat_pulldown":
+        ex = "latpulldown"
+    elif ex in ("deadlift", "dead_lift", "romanian_deadlift", "romanian deadlift", "rdl"):
+        ex = "romanian_deadlift"
+
+    if ex == "squat":
         # Landmarks indices (MediaPipe):
         # hip: 23/24, knee: 25/26, ankle: 27/28, shoulder: 11/12
         hip = W[:, 23, :2]
@@ -204,12 +212,12 @@ def auto_label_rep(seq_norm, ex_name, st, en):
         torso_angle = np.degrees(np.arctan2(np.abs(torso_dx), np.abs(torso_dy) + 1e-9))
         out["rounded_back"] = int(np.nanmax(torso_angle) > 35)
 
-    elif ex_name == "bench_press":
+    elif ex == "bench_press":
         out["elbow_flaring"] = 0
         out["uneven_lockout"] = 0
-        out["bar_path_off"] = 0
+        out["bar_not_touching_chest"] = 0
 
-    elif ex_name == "latpulldown":
+    elif ex == "latpulldown":
         # indices: shoulders 11,12 elbows 13,14 wrists 15,16 hips 23,24
         sh_y = W[:, [11, 12], 1]
         el_y = W[:, [13, 14], 1]
@@ -226,18 +234,130 @@ def auto_label_rep(seq_norm, ex_name, st, en):
         bottom_ok = np.nanmax(el_y_m - sh_y_m) > 0.02
         out["elbows_not_below_shoulders"] = int(not bottom_ok)
 
-        # 2) incomplete ROM: wrists didn't travel enough (top->bottom)
-        # если кистей нет, правило слабое, но лучше чем ничего
-        rom = float(np.nanmax(wr_y_m) - np.nanmin(wr_y_m)) if np.isfinite(np.nanmax(wr_y_m)) else 0.0
-        out["incomplete_rom"] = int(rom < 0.08)  # подстрой 0.06..0.12 под твои видео
-
-        # 3) torso swing: hips x jitter too big (качает корпусом)
+        # 2) torso swing: hips x jitter too big (качает корпусом)
         swing = float(np.nanstd(hip_x_m)) if np.isfinite(np.nanstd(hip_x_m)) else 0.0
-        out["torso_swing"] = int(swing > 0.020)  # подстрой 0.015..0.03
+        out["swinging_momentum"] = int(swing > 0.020)  # подстрой 0.015..0.03
 
-        # 4) shrugging: shoulders go up noticeably at top (shoulder y becomes smaller)
+        # 3) shoulder shrug: shoulders move up noticeably
         # берем изменение sh_y в окне
         sh_range = float(np.nanmax(sh_y_m) - np.nanmin(sh_y_m)) if np.isfinite(np.nanmax(sh_y_m)) else 0.0
-        out["shrugging"] = int(sh_range > 0.05)  # подстрой 0.03..0.07
+        out["shoulder_shrug"] = int(sh_range > 0.05)  # подстрой 0.03..0.07
+
+    elif ex == "lateral_raises":
+        vis_thr = 0.35
+        depth = np.full((len(W),), np.nan, dtype=np.float32)
+        side_y = np.full((len(W), 2), np.nan, dtype=np.float32)  # left/right selected y (wrist or elbow)
+
+        for t in range(len(W)):
+            lm = W[t]
+            sh_vals = []
+            for sh in (11, 12):
+                y = lm[sh, 1]
+                v = lm[sh, 3]
+                if np.isfinite(y) and np.isfinite(v) and v >= vis_thr:
+                    sh_vals.append(float(y))
+            if not sh_vals:
+                continue
+            sh_m = float(np.mean(sh_vals))
+
+            selected = []
+            for side_i, (wr, el) in enumerate(((15, 13), (16, 14))):
+                y_wr, v_wr = lm[wr, 1], lm[wr, 3]
+                y_el, v_el = lm[el, 1], lm[el, 3]
+                if np.isfinite(y_wr) and np.isfinite(v_wr) and v_wr >= vis_thr:
+                    y_sel = float(y_wr)
+                elif np.isfinite(y_el) and np.isfinite(v_el) and v_el >= vis_thr:
+                    y_sel = float(y_el)
+                else:
+                    y_sel = np.nan
+                side_y[t, side_i] = y_sel
+                if np.isfinite(y_sel):
+                    selected.append(y_sel)
+
+            if selected:
+                depth[t] = float(np.mean(selected) - sh_m)
+
+        if np.isfinite(depth).any():
+            top_i = int(np.nanargmin(depth))
+            top_depth = float(depth[top_i])
+        else:
+            top_i = 0
+            top_depth = 1.0
+
+        top_l = side_y[top_i, 0]
+        top_r = side_y[top_i, 1]
+        top_asym = abs(float(top_l - top_r)) if np.isfinite(top_l) and np.isfinite(top_r) else 0.0
+
+        eaL = series_elbow_angles(W, side="left")
+        eaR = series_elbow_angles(W, side="right")
+        min_candidates = []
+        if np.isfinite(eaL).any():
+            min_candidates.append(float(np.nanmin(eaL)))
+        if np.isfinite(eaR).any():
+            min_candidates.append(float(np.nanmin(eaR)))
+        min_ea = min(min_candidates) if min_candidates else 180.0
+
+        out["insufficient_rom"] = int(top_depth > 0.04)
+        out["asymmetry"] = int(top_asym > 0.05)
+        out["too_much_elbow_bend"] = int(min_ea < 120.0)
+        if np.isfinite(depth).any():
+            top_d = float(np.nanmin(depth))
+            end_d = float(depth[-1]) if np.isfinite(depth[-1]) else float(np.nanmedian(depth))
+            out["incomplete_lowering"] = int((end_d - top_d) < 0.05)
+        else:
+            out["incomplete_lowering"] = 0
+
+        sh_y_m = np.nanmean(W[:, [11, 12], 1], axis=1)
+        if np.isfinite(sh_y_m).any():
+            sh_top = float(sh_y_m[top_i]) if 0 <= top_i < len(sh_y_m) and np.isfinite(sh_y_m[top_i]) else float(np.nanmedian(sh_y_m))
+            out["shoulder_shrug"] = int((float(np.nanmedian(sh_y_m)) - sh_top) > 0.018)
+        else:
+            out["shoulder_shrug"] = 0
+
+        hip_x = np.nanmean(W[:, [23, 24], 0], axis=1)
+        out["torso_sway"] = int(np.isfinite(hip_x).any() and (float(np.nanstd(hip_x)) > 0.02))
+
+    elif ex == "romanian_deadlift":
+        sh = W[:, [11, 12], :2]
+        hip = W[:, [23, 24], :2]
+
+        sh_x = np.nanmean(sh[:, :, 0], axis=1)
+        sh_y = np.nanmean(sh[:, :, 1], axis=1)
+        hip_x = np.nanmean(hip[:, :, 0], axis=1)
+        hip_y = np.nanmean(hip[:, :, 1], axis=1)
+
+        # torso angle vs floor: 90 upright, 0 near parallel
+        torso_floor = np.degrees(np.arctan2(np.abs(sh_y - hip_y), np.abs(sh_x - hip_x) + 1e-9))
+        start_torso = float(torso_floor[0]) if np.isfinite(torso_floor[0]) else np.nan
+        end_torso = float(torso_floor[-1]) if np.isfinite(torso_floor[-1]) else np.nan
+        bottom_torso = float(np.nanmin(torso_floor)) if np.isfinite(torso_floor).any() else np.nan
+
+        out["insufficient_hip_hinge"] = int(np.isfinite(bottom_torso) and (bottom_torso > 50.0))
+        out["rounded_back"] = int(np.isfinite([start_torso, end_torso]).all() and (abs(end_torso - start_torso) > 18.0))
+        out["incomplete_lockout"] = int(np.isfinite(end_torso) and (end_torso < 70.0))
+
+        def knee_angles(side="left"):
+            if side == "left":
+                h, k, a = 23, 25, 27
+            else:
+                h, k, a = 24, 26, 28
+            vals = np.full((len(W),), np.nan, dtype=np.float32)
+            for t in range(len(W)):
+                pts = W[t, [h, k, a], :2]
+                if np.isnan(pts).any():
+                    continue
+                vals[t] = angle(pts[0], pts[1], pts[2])
+            return vals
+
+        kL = knee_angles("left")
+        kR = knee_angles("right")
+        k = np.nanmean(np.stack([kL, kR], axis=0), axis=0)
+        out["excessive_knee_bend"] = int(np.isfinite(k).any() and (float(np.nanmin(k)) < 145.0))
+
+        # proxy for bar path: wrists should stay relatively close to hips in side view
+        l_dist = np.abs(W[:, 15, 0] - W[:, 23, 0])
+        r_dist = np.abs(W[:, 16, 0] - W[:, 24, 0])
+        wh_dist = np.nanmean(np.stack([l_dist, r_dist], axis=0), axis=0)
+        out["bar_too_far_from_body"] = int(np.isfinite(wh_dist).any() and (np.nanmax(wh_dist) > 0.22))
 
     return out

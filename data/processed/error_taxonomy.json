@@ -6,25 +6,33 @@
         "type": "binary",
         "description": "Hip does not reach knee height (hip_y < knee_y not achieved).",
         "view": "side",
-        "default_thresholds": { "hip_knee_margin": 0.0 }
+        "default_thresholds": {
+          "hip_knee_margin": 0.0
+        }
       },
       "excessive_forward_lean": {
         "type": "binary",
         "description": "Torso leans too far forward at bottom position.",
         "view": "side",
-        "default_thresholds": { "torso_angle_deg": 55 }
+        "default_thresholds": {
+          "torso_angle_deg": 55
+        }
       },
       "valgus_knee": {
         "type": "binary",
         "description": "Knees cave inward (front view).",
         "view": "front",
-        "default_thresholds": { "knee_inward_ratio": 0.9 }
+        "default_thresholds": {
+          "knee_inward_ratio": 0.9
+        }
       },
       "heels_lift": {
         "type": "binary",
         "description": "Heels lift off the floor during squat.",
         "view": "side_or_front",
-        "default_thresholds": { "heel_y_delta": 0.02 }
+        "default_thresholds": {
+          "heel_y_delta": 0.02
+        }
       },
       "non_neutral_spine": {
         "type": "binary",
@@ -32,6 +40,22 @@
         "view": "side",
         "default_thresholds": {
           "spine_angle_change_deg": 20
+        }
+      },
+      "knee_over_toe": {
+        "type": "binary",
+        "description": "Legacy key: knees travel excessively beyond toes.",
+        "view": "side_or_front",
+        "default_thresholds": {
+          "knee_ankle_x_delta": 0.10
+        }
+      },
+      "rounded_back": {
+        "type": "binary",
+        "description": "Legacy key: non-neutral lumbar/thoracic alignment.",
+        "view": "side",
+        "default_thresholds": {
+          "torso_rounding_deg": 35
         }
       }
     }
@@ -43,42 +67,181 @@
         "type": "binary",
         "description": "Elbows flare excessively away from the torso.",
         "view": "side_or_top",
-        "default_thresholds": { "elbow_angle_deg": 85 }
+        "default_thresholds": {
+          "elbow_angle_deg": 85
+        }
       },
       "bar_path_not_vertical": {
         "type": "binary",
         "description": "Wrist trajectory deviates significantly from a vertical path.",
         "view": "side",
-        "default_thresholds": { "wrist_x_std": 0.03 }
+        "default_thresholds": {
+          "wrist_x_std": 0.03
+        }
       },
       "uneven_lockout": {
         "type": "binary",
         "description": "Left and right arms lock out at different heights.",
         "view": "front_or_top",
-        "default_thresholds": { "wrist_y_diff": 0.02 }
+        "default_thresholds": {
+          "wrist_y_diff": 0.02
+        }
       },
       "butt_off_bench": {
         "type": "binary",
         "description": "Hips lift off the bench during press.",
         "view": "side",
-        "default_thresholds": { "hip_y_delta": 0.02 }
+        "default_thresholds": {
+          "hip_y_delta": 0.02
+        }
       },
       "non_neutral_wrist": {
         "type": "binary",
         "description": "Wrist joint deviates from neutral alignment.",
         "view": "side",
-        "default_thresholds": { "wrist_angle_deg": 25 }
+        "default_thresholds": {
+          "wrist_angle_deg": 25
+        }
+      },
+      "bar_not_touching_chest": {
+        "type": "binary",
+        "description": "Bar does not reach/touch chest at the bottom phase.",
+        "view": "side",
+        "default_thresholds": {
+          "bar_chest_y_margin": 0.03
+        }
       }
     }
   },
   "lat_pulldown": {
     "errors": {
-      "incomplete_top_extension": {"desc": "Не полностью выпрямляешь руки вверху"},
-      "insufficient_pull_depth": {"desc": "Недостаточно низко тянешь вниз"},
-      "excessive_lean_back": {"desc": "Слишком сильный наклон корпуса назад"},
-      "swinging_momentum": {"desc": "Раскачка/читинг корпусом"},
-      "uneven_pull": {"desc": "Неравномерная тяга (лево/право)"},
-      "shoulder_shrug": {"desc": "Пожимаешь плечами вверх"}
+      "incomplete_top_extension": {
+        "desc": "Arms are not fully extended at the top"
+      },
+      "insufficient_pull_depth": {
+        "desc": "Not enough pull depth at the bottom"
+      },
+      "excessive_lean_back": {
+        "desc": "Excessive torso lean back"
+      },
+      "swinging_momentum": {
+        "desc": "Body swing / momentum cheating"
+      },
+      "uneven_pull": {
+        "desc": "Asymmetric pull between left and right"
+      },
+      "shoulder_shrug": {
+        "desc": "Shrugging shoulders during pull"
+      },
+      "elbows_not_below_shoulders": {
+        "desc": "Legacy key: elbows never get below shoulder line"
+      }
+    }
+  },
+  "lateral_raises": {
+    "view_required": "front_or_side",
+    "errors": {
+      "insufficient_rom": {
+        "type": "binary",
+        "description": "Hands do not reach shoulder line at the top phase.",
+        "view": "front_or_side",
+        "default_thresholds": {
+          "top_depth_y": 0.04
+        }
+      },
+      "asymmetry": {
+        "type": "binary",
+        "description": "Left and right hands are at noticeably different heights at the top.",
+        "view": "front",
+        "default_thresholds": {
+          "wrist_y_diff": 0.05
+        }
+      },
+      "too_much_elbow_bend": {
+        "type": "binary",
+        "description": "Elbows are excessively flexed during the raise.",
+        "view": "front_or_side",
+        "default_thresholds": {
+          "elbow_min_deg": 120.0
+        }
+      },
+      "incomplete_lowering": {
+        "type": "binary",
+        "description": "Arms are not lowered back down enough before the next raise.",
+        "view": "front_or_side",
+        "default_thresholds": {
+          "end_minus_top_depth": 0.05
+        }
+      },
+      "shoulder_shrug": {
+        "type": "binary",
+        "description": "Shoulders elevate (shrug) at the top instead of isolated deltoid raise.",
+        "view": "front_or_side",
+        "default_thresholds": {
+          "shoulder_up_delta": 0.018
+        }
+      },
+      "torso_sway": {
+        "type": "binary",
+        "description": "Torso sways/rocks to generate momentum during the raise.",
+        "view": "front_or_side",
+        "default_thresholds": {
+          "hip_x_std": 0.02
+        }
+      }
+    }
+  },
+  "deadlift": {
+    "view_required": "side",
+    "errors": {
+      "insufficient_hip_hinge": {
+        "type": "binary",
+        "description": "Torso does not lower enough in the hinge phase (bottom is too upright).",
+        "view": "side",
+        "default_thresholds": {
+          "torso_bottom_floor_angle_deg": 50.0
+        }
+      },
+      "rounded_back": {
+        "type": "binary",
+        "description": "Back loses neutral alignment between start and finish (spine rounds/changes noticeably).",
+        "view": "side",
+        "default_thresholds": {
+          "torso_start_end_delta_deg": 18.0
+        }
+      },
+      "excessive_knee_bend": {
+        "type": "binary",
+        "description": "Knees bend too much and movement turns into a squat-like pattern.",
+        "view": "side",
+        "default_thresholds": {
+          "knee_min_deg": 145.0
+        }
+      },
+      "incomplete_lockout": {
+        "type": "binary",
+        "description": "Top position is not fully returned to upright/neutral.",
+        "view": "side",
+        "default_thresholds": {
+          "torso_end_floor_angle_deg": 70.0
+        }
+      },
+      "bar_too_far_from_body": {
+        "type": "binary",
+        "description": "Hands (bar proxy) drift too far from hips during the pull.",
+        "view": "side",
+        "default_thresholds": {
+          "wrist_hip_x_dist": 0.22
+        }
+      },
+      "excessive_forward_lean": {
+        "type": "binary",
+        "description": "Legacy key: torso leans excessively forward during the pull.",
+        "view": "side",
+        "default_thresholds": {
+          "torso_angle_deg": 55.0
+        }
+      }
     }
   }
 }

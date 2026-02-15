@@ -1,0 +1,11 @@
+{
+  "global": 0.5,
+  "errors": {
+    "torso_sway": 0.25
+  },
+  "exercise_errors": {
+    "lateral_raises": {
+      "torso_sway": 0.2
+    }
+  }
+}

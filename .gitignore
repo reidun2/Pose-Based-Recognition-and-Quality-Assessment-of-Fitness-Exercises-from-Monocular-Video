@@ -1,5 +1,36 @@
-*.mp4
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large source data
 data/raw_videos/
+data/test/
 
-*.mp4
+# Generated artifacts
+data/processed/model*.pt
+data/processed/reps_dataset.npz
+data/processed/test_predictions.json
+data/processed/test_predictions.csv
+data/processed/test_predictions_overlay/
+data/processed/cv_report*.json
+data/processed/eval_eda/
+data/processed/eval_eda_smoke/
 
+# Keep small config/label files
+!data/processed/error_taxonomy.json
+!data/processed/labels_reps.json
+!data/processed/exercise_overrides.json
+!data/processed/error_threshold_map.json

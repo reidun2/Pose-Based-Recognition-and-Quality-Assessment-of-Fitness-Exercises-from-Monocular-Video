@@ -7,14 +7,23 @@ from extract_pose import extract_landmarks_from_video
 from pose_normalize import normalize_sequence
 from reps import analyze_reps
 from auto_errors import auto_label_rep
-from pose_smooth import smooth_sequence
-
+from pose_smooth import smooth_sequence, stabilize_lr_flip, lock_lr_orientation
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "raw_videos"
 OUT_REP_LABELS = BASE_DIR / "data" / "processed" / "labels_reps.json"
 TAXONOMY_PATH  = BASE_DIR / "data" / "processed" / "error_taxonomy.json"
 
 EX_CYCLE_KEY = ord('e')
+EX_ALIASES = {
+    "lat_pulldown": "latpulldown",
+    "lateral_raise": "lateral_raises",
+    "lateralraises": "lateral_raises",
+    "deadlift": "romanian_deadlift",
+    "dead_lift": "romanian_deadlift",
+    "romanian_deadlift": "romanian_deadlift",
+    "romanian deadlift": "romanian_deadlift",
+    "rdl": "romanian_deadlift",
+}
 
 CONNECTIONS = [
     (11, 12),
@@ -25,21 +34,25 @@ CONNECTIONS = [
     (24, 26), (26, 28),
 ]
 
+
+def canonical_exercise_name(name):
+    ex = str(name).strip().lower()
+    return EX_ALIASES.get(ex, ex)
+
 # ----------------- Drawing -----------------
-def draw_pose(frame, lm, v_min=0.3):
+def draw_pose(frame, lm, v_min=0.3, z_abs_max=2.0, connections=CONNECTIONS):
     h, w = frame.shape[:2]
 
     def ok(i):
         x, y, z, v = lm[i]
-        return (
-            not np.isnan(x)
-            and not np.isnan(y)
-            and v >= v_min
-            and abs(z) < 2.0   # убираем “вылеты” в глубину
-        )
+        if np.isnan(x) or np.isnan(y) or v < v_min:
+            return False
+        if z_abs_max is not None and abs(z) >= z_abs_max:
+            return False
+        return True
 
 
-    for a, b in CONNECTIONS:
+    for a, b in connections:
         if ok(a) and ok(b):
             ax, ay = int(lm[a, 0] * w), int(lm[a, 1] * h)
             bx, by = int(lm[b, 0] * w), int(lm[b, 1] * h)
@@ -101,21 +114,37 @@ def list_videos(root=DATA_PATH, exercise=None):
     root = str(root)
     videos = []
 
+    def collect_mp4s(ex_dir):
+        for pat in ("*.mp4", "*.MP4"):
+            for fp in sorted(glob.glob(os.path.join(ex_dir, pat))):
+                videos.append(fp)
+
     if exercise is not None:
-        ex_dir = os.path.join(root, exercise)
-        if not os.path.isdir(ex_dir):
-            return []
-        pattern = os.path.join(ex_dir, "*.mp4")
-        for fp in sorted(glob.glob(pattern)):
-            videos.append((exercise, fp))
-        return videos
+        ex_query = str(exercise).strip().lower()
+        candidate_dirs = []
+        if ex_query in ("romanian_deadlift", "romanian deadlift", "rdl"):
+            candidate_dirs = ["romanian_deadlift", "deadlift"]
+        else:
+            candidate_dirs = [exercise]
+
+        out = []
+        for d in candidate_dirs:
+            ex_dir = os.path.join(root, d)
+            if not os.path.isdir(ex_dir):
+                continue
+            videos = []
+            collect_mp4s(ex_dir)
+            out.extend(videos)
+
+        out = sorted(set(out))
+        return [(exercise, fp) for fp in out]
 
     ex_dirs = sorted([d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d)])
     for ex_dir in ex_dirs:
         ex_name = os.path.basename(ex_dir)
-        pattern = os.path.join(ex_dir, "*.mp4")
-        for fp in sorted(glob.glob(pattern)):
-            videos.append((ex_name, fp))
+        for pat in ("*.mp4", "*.MP4"):
+            for fp in sorted(glob.glob(os.path.join(ex_dir, pat))):
+                videos.append((ex_name, fp))
     return videos
 
 # ----------------- HUD -----------------
@@ -163,19 +192,25 @@ def draw_spine(frame, lm):
 
 def draw_hud(frame, folder_exercise, label, rep_idx_1based, rep_total, v_min, cur_errors, errors_list,
              vid_i=None, vid_total=None):
+    disp_ex = canonical_exercise_name(folder_exercise)
     y = 24
     if vid_i is not None and vid_total is not None:
         cv2.putText(frame, f"Video: {vid_i}/{vid_total}", (15, y),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 2)
         y += 22
 
-    cv2.putText(frame, f"Folder: {folder_exercise}/{label} | Rep: {rep_idx_1based}/{rep_total} | v_min={v_min:.2f}",
+    cv2.putText(frame, f"Folder: {disp_ex}/{label} | Rep: {rep_idx_1based}/{rep_total} | v_min={v_min:.2f}",
                 (15, y), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255,255,255), 2)
     y += 24
 
     cv2.putText(frame, "Keys: space pause | r replay | n/p rep | N/P video | e switch folder | 1..9 toggle | s save | q quit",
                 (15, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
     y += 24
+
+    if canonical_exercise_name(folder_exercise) == "romanian_deadlift":
+        cv2.putText(frame, "RDL target: straight back(top) -> hinge near parallel -> straight back(top)",
+                    (15, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (180, 255, 180), 2)
+        y += 22
 
     active = [e for e in errors_list if int(cur_errors.get(e, 0)) == 1]
     active_txt = ", ".join(active[:6]) + (" ..." if len(active) > 6 else "")
@@ -194,7 +229,7 @@ def build_video_entry(folder_exercise, label, rep_results, rep_to_errors):
                 "end": int(r["end"]),
                 "errors": rep_to_errors.get(rep_id, {})
             })
-    return {"exercise": folder_exercise, "label": label, "reps": reps_out}
+    return {"exercise": canonical_exercise_name(folder_exercise), "label": label, "reps": reps_out}
 
 # ----------------- Playback -----------------
 def play_rep_clip(
@@ -207,6 +242,8 @@ def play_rep_clip(
     win_name="Rep Annotator",
     square_size=640,
     overlay_fn=None,
+    z_abs_max=2.0,
+    connections=CONNECTIONS,
 ):
     cap.set(cv2.CAP_PROP_POS_FRAMES, rep_start * stride)
 
@@ -228,7 +265,7 @@ def play_rep_clip(
             if 0 <= t < len(seq_draw):
                 lm = seq_draw[t]
                 lm_sq = remap_landmarks_to_square(lm, orig_w, orig_h, scale, left, top, size=square_size)
-                draw_pose(square, lm_sq, v_min=v_min)
+                draw_pose(square, lm_sq, v_min=v_min, z_abs_max=z_abs_max, connections=connections)
 
             if overlay_fn is not None:
                 overlay_fn(square)
@@ -263,7 +300,7 @@ def main():
     rep_db  = load_json(OUT_REP_LABELS, {})
 
     # start in squat
-    SUPPORTED_EXERCISES = ["squat", "bench_press", "latpulldown"]  # add more later
+    SUPPORTED_EXERCISES = ["squat", "bench_press", "latpulldown", "lateral_raises", "romanian_deadlift"]  # add more later
     exercise_i = 0
     exercise_filter = SUPPORTED_EXERCISES[exercise_i]
 
@@ -291,29 +328,65 @@ def main():
         label = "raw"
         video_key = str(video_path).replace("\\", "/")
 
-        errors_list = list(taxonomy.get(folder_ex, {}).get("errors", {}).keys())
+        ex_tax_key = canonical_exercise_name(folder_ex)
+        if ex_tax_key not in taxonomy and ex_tax_key == "latpulldown" and "lat_pulldown" in taxonomy:
+            ex_tax_key = "lat_pulldown"
+        if ex_tax_key not in taxonomy and ex_tax_key == "romanian_deadlift" and "deadlift" in taxonomy:
+            ex_tax_key = "deadlift"
+        errors_list = list(taxonomy.get(ex_tax_key, {}).get("errors", {}).keys())
 
         print(f"\n[{i_vid+1}/{len(videos)}] folder={folder_ex}: {video_path}")
 
-        # 1) pose
-        from pose_smooth import smooth_sequence
-        from pose_smooth import stabilize_lr_flip   # <-- добавь импорт (если вставил туда)
+        is_lat = (exercise_filter == "latpulldown")
+        is_lateral = (exercise_filter == "lateral_raises")
+        cur_v_min = 0.20 if is_lat else v_min
+        cur_z_abs_max = None if is_lat else 2.0
+        cur_max_gap = 3 if is_lat else (3 if is_lateral else 8)
+        cur_ema_alpha = 0.20 if is_lateral else 0.25
+        cur_connections = CONNECTIONS
 
-        seq_raw = extract_landmarks_from_video(video_path, max_frames=max_frames, stride=stride)
+        seq_raw = extract_landmarks_from_video(
+            video_path,
+            max_frames=max_frames,
+            stride=stride,
+            max_hold=4,
+        )
 
-        # 1) FIX: стабилизируем лев/прав ДО сглаживания и нормализации
+        # Restore original pipeline for rep quality:
+        # stabilize LR first, then hard-lock LR for lat pulldown.
         seq_raw = stabilize_lr_flip(seq_raw, hysteresis_frames=3)
-
-        # 2) дальше как было
-        if exercise_filter == "latpulldown":
+        if is_lat:
             seq_raw = lock_lr_orientation(seq_raw)
 
-        seq_raw = smooth_sequence(seq_raw, vis_thr=0.35, max_gap=8, ema_alpha=0.25)
-        seq_norm = normalize_sequence(seq_raw.copy(), rotate=(exercise_filter != "latpulldown"))
+        seq_raw = smooth_sequence(seq_raw, vis_thr=0.35, max_gap=cur_max_gap, ema_alpha=cur_ema_alpha)
+        seq_norm = normalize_sequence(seq_raw.copy(), rotate=(not (is_lat or is_lateral)))
 
 
         # 2) reps for the CURRENT folder exercise
         rep_results, _ = analyze_reps(seq_norm, folder_ex, stride=stride)
+        if not errors_list and len(seq_norm) > 1:
+            probe = auto_label_rep(seq_norm, folder_ex, 0, len(seq_norm) - 1)
+            errors_list = list(probe.keys())
+        if is_lat and len(rep_results) == 0 and len(seq_norm) > 1:
+            rep_results = [{
+                "rep": 1,
+                "start": 0,
+                "bottom": int(len(seq_norm) // 2),
+                "end": int(len(seq_norm) - 1),
+                "rep_ok": 1,
+                "errors": {},
+            }]
+            print("Detected reps: 0 -> fallback to one full-clip rep for manual annotation.")
+        if exercise_filter in ("romanian_deadlift", "deadlift") and len(rep_results) == 0 and len(seq_norm) > 1:
+            rep_results = [{
+                "rep": 1,
+                "start": 0,
+                "bottom": int(len(seq_norm) // 2),
+                "end": int(len(seq_norm) - 1),
+                "rep_ok": 1,
+                "errors": {},
+            }]
+            print("Detected reps: 0 -> fallback to one full-clip RDL rep for manual annotation.")
         print(f"Detected reps: {len(rep_results)}")
 
         # load existing labels for this video
@@ -383,7 +456,7 @@ def main():
             rep_total = len(rep_results)
 
             def overlay(frame):
-                draw_hud(frame, folder_ex, label, rep_idx_1based, rep_total, v_min, cur_errors, errors_list,
+                draw_hud(frame, folder_ex, label, rep_idx_1based, rep_total, cur_v_min, cur_errors, errors_list,
                          vid_i=vid_i, vid_total=vid_total)
                 draw_errors_panel_bottom(frame, errors_list, cur_errors)
 
@@ -391,10 +464,12 @@ def main():
                 cap, seq_raw,
                 st, en,
                 stride=stride,
-                v_min=v_min,
+                v_min=cur_v_min,
                 win_name="Rep Annotator",
                 square_size=square_size,
-                overlay_fn=overlay
+                overlay_fn=overlay,
+                z_abs_max=cur_z_abs_max,
+                connections=cur_connections,
             )
 
             if kf == -1:
@@ -417,6 +492,8 @@ def main():
                     e = errors_list[idx]
                     cur_errors[e] = 1 - int(cur_errors.get(e, 0))
                     rep_to_errors[rep_num] = cur_errors
+                    rep_db[video_key] = build_video_entry(folder_ex, label, rep_results, rep_to_errors)
+                    save_json(OUT_REP_LABELS, rep_db)
                 continue
 
             # save
