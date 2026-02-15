@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=ieq8s0-3fBM
+
 # Pose-Based Recognition and Form Quality Assessment
 
 End-to-end pipeline:
